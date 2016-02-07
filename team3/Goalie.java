@@ -12,10 +12,17 @@ public class Goalie extends GoalKeeper {
     public void step() {
 
         int puckY = getPuck().getY();
-        if (puckY > 50) {
-            puckY = 50;
-        } else if (puckY < -50) {
-            puckY = -50;
+
+        int max = 50;
+
+        if (getPuck().getSpeed() > 700) {
+            max = 45;
+        }
+
+        if (puckY > max) {
+            puckY = max;
+        } else if (puckY < (max * -1)) {
+            puckY = -1 * max;
         }
 
         if (getPuck().getSpeed() > 1000) {
@@ -28,7 +35,13 @@ public class Goalie extends GoalKeeper {
             skate(-2550, puckY, 50);
         }
 
-        turn(getPuck(), MAX_TURN_SPEED);
+
+        int pX = getPuck().getX();
+        if (pX < -2550) {
+            pX = -2550;
+        };
+
+        turn(pX, getPuck().getY(), MAX_TURN_SPEED);
 
         if (hasPuck()) {
             shoot(700, 1300, MAX_SHOT_SPEED);

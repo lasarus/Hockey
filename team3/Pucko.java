@@ -24,8 +24,6 @@ public class Pucko implements ITeam {
     public Player getPlayer(int index) {
 
         switch (index) {
-            case 0:
-                return new Center(index, "Centi");
             case 1:
                 return new AttackerLeft(index, "Atti");
             case 2:
@@ -34,10 +32,12 @@ public class Pucko implements ITeam {
                 return new Defender(index, "Deffe");
             case 4:
                 return new Defender(index, "Dafii");
+            case 5:
+                return new Center(index, "Centi");
             default:
                 break;
         }
-        return new Center(index, "Centi");
+        return new Center(index, "FEL");
     }
 }
 
