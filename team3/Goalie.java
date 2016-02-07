@@ -12,10 +12,10 @@ public class Goalie extends GoalKeeper {
     public void step() {
 
         int puckY = getPuck().getY();
-        if (puckY > 70) {
-            puckY = 70;
-        } else if (puckY < -70) {
-            puckY = -70;
+        if (puckY > 50) {
+            puckY = 50;
+        } else if (puckY < -50) {
+            puckY = -50;
         }
 
         if (getPuck().getSpeed() > 1000) {
