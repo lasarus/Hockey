@@ -16,7 +16,7 @@ public class AttackerLeft extends Player {
     }
     public int getNumber() { return Pucko.numbers[index]; }
     public String getName() { return name; }
-    public boolean isLeftHanded() { return true; }
+    public boolean isLeftHanded() { return false; }
     public void step() {
         if (hasPuck()) // If we have the puck
             skate(2600, 0, 1000); // Go for the goal
