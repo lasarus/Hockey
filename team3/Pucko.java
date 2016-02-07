@@ -21,9 +21,9 @@ public class Pucko implements ITeam {
             case 0:
                 return new Center(index, "Centi");
             case 1:
-                return new AttackerLeft(index, "Atti");
+                return new Attacker(index, "Atti");
             case 2:
-                return new AttackerRight(index, "Atta");
+                return new Attacker(index, "Atta");
             case 3:
                 return new Defender(index, "Deffe");
             case 4:
