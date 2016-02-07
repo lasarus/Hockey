@@ -13,7 +13,6 @@ public class Defender extends Player {
 
     private int index;
     private String name;
-    private boolean attack = false;
 
     public Defender(int index, String name) {
         this.index = index;
@@ -28,48 +27,25 @@ public class Defender extends Player {
 	int targetX = -1500;
 	int targetY = 700;
 
-	moveStick(45, 100);
-
-	if(attack) {
-	    if(getPuck().getSpeed() > 600) {
-		attack = false;
-	    }
-	    else {
-		skate(getPuck(), 1000);
-	    }
-	}
-	else if(getPuck().getSpeed() < 50 &&
-		getPuck().isHeld() &&
-		Util.dist(getX() - getPuck().getX(), getY() - getPuck().getY()) > 1000) {
-		    attack = true;
-	}
+	setAimOnStick(true);
 
 	if(hasPuck()) {
-	    if(getX() * getX() < 100) {
+	    if(getX() * getX() < 100 || getX() > 200) {
 		shoot(2600, 0, 1000);
 	    }
 	    else {
-		skate(0, 0, 1000);
+		skate(2600, 0, 1000);
 	    }
 	}
 	else {
-	    if(getPuck().getX() < 0) {
+	    if(getPuck().getX() < -200 || getPuck().getX() > 300) {
 		skate(getPuck(), 1000);
 	    }
 	    else {
 		int dist = (int)Util.dist(getX() - targetX, getY() - targetY);
-		int speed = 0;
+		int speed = 200;
 		if(dist > 300) {
 		    speed = 1000;
-		}
-		else if(dist > 150) {
-		    speed = 200;
-		}
-		else if(dist > 100) {
-		    speed = 50;
-		}
-		else {
-		    speed = 0;
 		}
 		if(index % 2 == 0) {
 		    skate(targetX, targetY, speed);
