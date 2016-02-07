@@ -24,7 +24,7 @@ public class AttackerLeft extends Player {
             ++a;
             turn(2600, 91, MAX_TURN_SPEED);
 
-            if(a>2){
+            if(a>4){
                 shoot(2600, -91, MAX_SHOT_SPEED);
             }   
         }
