@@ -19,7 +19,11 @@ public class Goalie extends GoalKeeper {
         }
 
         if (getPuck().getSpeed() > 1000) {
-            skate(-2550, puckY, 200);
+            if (getPuck().getX() < 0) {
+                skate(-2550, puckY, 300);
+            } else {
+                skate(-2550, puckY, 200);
+            }
         } else {
             skate(-2550, puckY, 50);
         }
@@ -27,7 +31,7 @@ public class Goalie extends GoalKeeper {
         turn(getPuck(), MAX_TURN_SPEED);
 
         if (hasPuck()) {
-            shoot(700, 1300, 5000);
+            shoot(700, 1300, MAX_SHOT_SPEED);
         }
     }
 }
