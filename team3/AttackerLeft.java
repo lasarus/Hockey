@@ -18,9 +18,25 @@ public class AttackerLeft extends Player {
     public String getName() { return name; }
     public boolean isLeftHanded() { return false; }
     public void step() {
-        if (hasPuck()) // If we have the puck
-            skate(2600, 0, 1000); // Go for the goal
-        else // Else
-            skate(getPuck(), 1000); // Go for the puck
+        setAimOnStick(true);
+        if (hasPuck()) { // If this player has the puck
+            if(getX()<1000) {
+                skate(2000, -2000, 1000); // Go for the edge
+            }
+            else if(getX()<0){
+                skate(2630, -100, 1000);
+            }
+            else
+                shoot(2600, -91, MAX_SHOT_SPEED);
+        }
+        else { // If doesn't have puck
+            if(getX()>-500 && getY()>-100){ // and is in zone of play
+                skate(getPuck(), 1000); // Go for the puck
+            }
+
+            else if (true) {
+                skate(getPuck().getX()+100,getPuck().getY()+100,500); //Stay in good pos
+            }
+        }
     }
 }
