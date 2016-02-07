@@ -8,13 +8,19 @@ import hockey.api.ITeam;
 public class Pucko implements ITeam {
 
     public final static int[] numbers = {1, 2, 3, 4, 5, 6};
+    public Goalie g;
 
     public String getShortName() { return "PCK"; }
     public String getTeamName() { return "Pucko"; }
-    public Color getTeamColor() { return Color.GREEN; }
+    public Color getTeamColor() {
+        return Color.RED;
+    }
     public Color getSecondaryTeamColor() { return Color.RED; }
     public int getLuckyNumber() { return 4; }
-    public GoalKeeper getGoalKeeper() { return new Goalie(); }
+    public GoalKeeper getGoalKeeper() {
+        g = new Goalie();
+        return g;
+    }
     public Player getPlayer(int index) {
 
         switch (index) {
