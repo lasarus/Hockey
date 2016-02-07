@@ -21,16 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Attacker.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team3/Attacker.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Attacker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team3/Attacker.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,8 +54,8 @@
       <file leaf-file-name="Goalie.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/team3/Goalie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28052804">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.92574257">
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +67,9 @@
         <entry file="file://$PROJECT_DIR$/team3/Pucko.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#377#378#0" expanded="true" />
                 <element signature="e#409#410#0" expanded="true" />
               </folding>
@@ -360,6 +351,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#377#378#0" expanded="true" />
             <element signature="e#409#410#0" expanded="true" />
           </folding>
@@ -401,8 +393,9 @@
     <entry file="file://$PROJECT_DIR$/team3/Pucko.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#377#378#0" expanded="true" />
             <element signature="e#409#410#0" expanded="true" />
           </folding>
@@ -411,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team3/Goalie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28052804">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.92574257">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
