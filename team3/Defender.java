@@ -1,16 +1,16 @@
-package laget;
+package team3;
 
 import java.awt.Color;
 import hockey.api.GoalKeeper;
 import hockey.api.Player;
 import hockey.api.ITeam;
 
-public class Center extends Player {
+public class Defender extends Player {
 
     private int index;
     private String name;
 
-    public Center(int index, String name) {
+    public Defender(int index, String name) {
         this.index = index;
         this.name = name;
     }

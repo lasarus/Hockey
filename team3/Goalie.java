@@ -1,4 +1,4 @@
-package laget;
+package team3;
 
 import java.awt.Color;
 import hockey.api.GoalKeeper;
