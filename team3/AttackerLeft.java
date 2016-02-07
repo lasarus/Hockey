@@ -21,21 +21,21 @@ public class AttackerLeft extends Player {
         setAimOnStick(true);
         if (hasPuck()) { // If this player has the puck
             if(getX()<1000) {
-                skate(2000, -2000, 1000); // Go for the edge
+                skate(2000, -2000, MAX_SPEED); // Go for the edge
             }
             else if(getX()<0){
-                skate(2630, -100, 1000);
+                skate(2630, -100, MAX_SPEED);
             }
             else
                 shoot(2600, -91, MAX_SHOT_SPEED);
         }
         else { // If doesn't have puck
             if(getX()>-500 && getY()>-100){ // and is in zone of play
-                skate(getPuck(), 1000); // Go for the puck
+                skate(getPuck(), MAX_SPEED); // Go for the puck
             }
 
             else if (true) {
-                skate(getPuck().getX()+100,getPuck().getY()+100,500); //Stay in good pos
+                skate(getPuck().getX()+100,getPuck().getY()+100,(MAX_SPEED/2)); //Stay in good pos
             }
         }
     }
