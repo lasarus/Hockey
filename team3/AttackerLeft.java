@@ -29,16 +29,16 @@ public class AttackerLeft extends Player {
             }   
         }
         else { // If doesn't have puck
-            if(getX()>-5000 && getY()>-1000){ // and is in zone of play
+            if(getX()>-500 && getY()>-1000){ // and is in zone of play
                 skate(getPuck(), MAX_SPEED); // Go for the puck
             }
 
             else if (getPuck().getX()>860) {
-                skate(getPuck().getX()+1000,getPuck().getY()-450,100); //Stay in good pos
+                skate(getPuck().getX()+1000,getPuck().getY()-450,1000); //Stay in good pos
             }
 
             else if(true) {
-                skate(getPuck().getX()-10,getPuck().getY()-450,100); //Stay in good pos
+                skate(getPuck().getX()-10,getPuck().getY()-450,1000); //Stay in good pos
             }
          }
     }
