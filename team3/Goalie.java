@@ -7,11 +7,32 @@ import hockey.api.ITeam;
 
 public class Goalie extends GoalKeeper {
     public int getNumber() { return 1; }
-    public String getName() { return "Herbert"; }
+    public String getName() { return "Golle"; }
     public boolean isLeftHanded() { return false; }
     public void step() {
-        skate(-2550, 0, 200); // Stand in middle of goal 1/2 m in front of it.
-        turn(getPuck(), MAX_TURN_SPEED); // Turn against puck
+
+        int puckY = getPuck().getY();
+        if (puckY > 50) {
+            puckY = 50;
+        } else if (puckY < -50) {
+            puckY = -50;
+        }
+
+        if (getPuck().getSpeed() > 1000) {
+            if (getPuck().getX() < 0) {
+                skate(-2550, puckY, 300);
+            } else {
+                skate(-2550, puckY, 200);
+            }
+        } else {
+            skate(-2550, puckY, 50);
+        }
+
+        turn(getPuck(), MAX_TURN_SPEED);
+
+        if (hasPuck()) {
+            shoot(700, 1300, MAX_SHOT_SPEED);
+        }
     }
 }
 
